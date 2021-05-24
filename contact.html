@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepalese Traditional Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.PNG" width="125px"></div>
+                </a>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="Images/cart.png" width="30px"  height="30px"></a>
+        <img src="Images/menu.png" class="menu-icon"    onclick="menutoggle()"> 
+        </div>
+        </div>
+        
+<!-------- contact page ------------>
+       
+<div class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>We would love to respond tour queries and help you succeed. Feel free get in touch with us.</p>
+    </div>
+    <div class="big-container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>20 Chandos Street,<br>Ashfield,New South Wales,<br>2131</p>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+61450175373</p>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>nabinghimire617@gmail.com</p>
+                    </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span><em> Full Name </em></span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span><em>Email </em></span>   
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span><em>Type your Message...</em></span>
+                </div>
+                <div class="inputBox">
+                    <input type="Submit" name="" value="Send">
+                </div>
+            </form>    
+        </div>
+    </div>  
+</div>
+
+        
+<!----------- footer ------------->
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                            <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="Images/app-store.png">
+                            <img src="Images/play-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - NTS Store</p>
+            </div>
+        </div>
+        
+  <!-------js for toggle menu------->
+        
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight= "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight== "0px"){
+                    MenuItems.style.maxHeight= "200px";
+                    }
+            else{
+                MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>  
+        
+       
+        
+        
+        
+        
+        
+     
+        
+    </body>
+</html>
+
