@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepalese Traditional Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.PNG" width="125px"></div>
+                </a>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="Images/cart.png" width="30px"  height="30px"></a>
+        <img src="Images/menu.png" class="menu-icon"    onclick="menutoggle()"> 
+        </div>
+        </div>
+        
+<!------------ about-page ------->
+        <div class="about">
+        <div class="box1">
+            <img src="Images/about.jpg">  
+        </div>  
+        <div class="box2">
+            <div class="child">
+            </div>
+            <div class="child1">
+                <p>Nepalese Traditional store offers a wide range of products from local and international brands. It is primarily focused to offer the varieties of Fashion Clothing. It tends to offer the best customer service experience with convenient online shopping systems with various range of products.</p>
+            </div>
+            <div class="child">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>  
+        </div>
+        </div>
+
+    
+<!----------- footer ------------->
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                            <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="Images/app-store.png">
+                            <img src="Images/play-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - NTS Store</p>
+            </div>
+        </div>
+        
+    <!-------js for toggle menu------->
+        
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight= "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight== "0px"){
+                    MenuItems.style.maxHeight= "200px";
+                    }
+            else{
+                MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        
+        
+        <!------- js for toggle Form ----->
+        
+        <script>
+        
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        
+        
+            function register(){
+              
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+        }
+            
+            function login(){
+              
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+        }
+               
+        </script>
+        
+        
+        
+        
+        
+     
+        
+    </body>
+</html>
+
